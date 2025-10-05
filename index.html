@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhac Nhu Cc 🎶</title>
+    <title>Nhật Nè 🎵</title>
     <style>
         body {
-            background: linear-gradient(135deg, #667eea, #764ba2);
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             display: flex;
             flex-direction: column;
@@ -16,26 +16,20 @@
             height: 100vh;
             margin: 0;
         }
+        h1 {
+            margin-bottom: 20px;
+        }
         audio {
             width: 80%;
             max-width: 400px;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>🎧 Web phát nhạc tự động</h1>
-    <audio id="player" autoplay loop>
+    <h1>🎶 Nhật Nè</h1>
+    <audio controls>
         <source src="song.mp3" type="audio/mpeg">
         Trình duyệt của bạn không hỗ trợ phát nhạc.
     </audio>
-    <script>
-        // Một số trình duyệt chặn autoplay nếu chưa có thao tác người dùng,
-        // nên ta "ép" phát khi người dùng chạm vào trang.
-        document.addEventListener("click", () => {
-            const player = document.getElementById("player");
-            player.play();
-        });
-    </script>
 </body>
 </html>
